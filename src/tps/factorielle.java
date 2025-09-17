@@ -4,21 +4,20 @@
  */
 package tps;
 import java.io.*;
+import tps.entree;
 
 /**
  *
  * @author Titouan
  */
-public class Factorielle {
+public class factorielle {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException {
         
-        System.out.println("Nombre en question?");
-        BufferedReader rep = new BufferedReader(new InputStreamReader(System.in));
-        int reponse = Integer.parseInt(rep.readLine());
+        int reponse = entree.entier("Nombre en question ?");
         
         int factorielle = 1;
         for(int i = 1; i < reponse; i++) {

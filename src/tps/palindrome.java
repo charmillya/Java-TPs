@@ -13,7 +13,7 @@ import java.text.Normalizer;
  *
  * @author Titouan
  */
-public class Palindrome {
+public class palindrome {
     
     public static void main(String[] args) throws IOException {
         BufferedReader rep = new BufferedReader(new InputStreamReader(System.in));
