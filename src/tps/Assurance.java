@@ -10,7 +10,7 @@ import java.io.*;
  *
  * @author Titouan
  */
-public class assurance {
+public class Assurance {
 
     public static void main(String[] args) throws IOException {
         int nbPoints = 0;

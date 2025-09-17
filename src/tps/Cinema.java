@@ -11,7 +11,7 @@ import java.util.stream.*;
  *
  * @author Titouan
  */
-public class cinema {
+public class Cinema {
 
     public static void main(String[] args) throws IOException {
         BufferedReader rep = new BufferedReader(new InputStreamReader(System.in));

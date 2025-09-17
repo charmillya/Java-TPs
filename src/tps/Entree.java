@@ -11,7 +11,7 @@ package tps;
 import java.io.*;
 // Classe Entree permettant la saisie et la conversion de données saisies au clavier.
 
-public class entree {
+public class Entree {
 
     static BufferedReader rep = new BufferedReader(new InputStreamReader(System.in));
 
@@ -22,7 +22,7 @@ public class entree {
             float valeur = Float.parseFloat(rep.readLine());
             return valeur;
         } catch (NumberFormatException e) {
-            return entree.flottant("Zone absente ou type incorrect, essayez a nouveau");
+            return Entree.flottant("Zone absente ou type incorrect, essayez a nouveau");
 
         }
 
@@ -34,7 +34,7 @@ public class entree {
             double valeur = Double.parseDouble(rep.readLine());
             return valeur;
         } catch (NumberFormatException e) {
-            return entree.reeldouble("Zone absente ou type incorrect, essayez a nouveau");
+            return Entree.reeldouble("Zone absente ou type incorrect, essayez a nouveau");
 
         }
     }
