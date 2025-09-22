@@ -41,7 +41,7 @@ public class Entree {
     
     public static String car(String msg) throws IOException {
         System.out.println(msg);
-        String valeur = rep.readLine().substring(1);
+        String valeur = rep.readLine().substring(0, 1);
         return valeur;
     }
 

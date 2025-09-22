@@ -24,7 +24,11 @@ class Section {
     public Section(int noSection) {
         nomSection = "TSSIO" + noSection;
         nbEleves = 0;
-        tabEleves = new Eleve[30];
+        for(var i = 0; i < tabEleves.length; i++) {
+            tabEleves[i] = new Eleve();
+            tabEleves[i].initial("Eleve " + (i+1), (i+1)*2.8, i*4.5);
+            tabEleves[i].affiche();
+        }
     }
 
     public void afficheNomSec() {
@@ -89,7 +93,7 @@ class Section {
         if (this.tabEleves.length == 0) {
             System.out.println("Aucun élève dans la classe " + nomSection + " !");
         } else {
-            if (tri == "I") {
+            if (tri.equals("I")) {
                 for (int i = 0; i < this.tabEleves.length; i++) {
                     if (tabEleves[i].moyenne() <= f) {
                         tabEleves[i].affiche();
